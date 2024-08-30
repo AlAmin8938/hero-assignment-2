@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-fonts {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body{
+  background-color: black;
+}
+
+.head-part{
+  width: 1440px;
+  margin: 0 auto;
+  background-color: rgba(48, 48, 48, 0.54)
+
+}
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+.button-primary{
+  background-color: rgba(230, 83, 60, 1);
+  border-radius: 22px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 32px;
+  border: none;
+}
+
+
+
+/* nav related style */
+.nav-bar{
+  justify-content:space-between;
+  align-items: center;
+  margin: 0 260px
+  
+}
+
+.nav-links{
+  align-items: center;
+}
+.brand-name{
+  font-style: italic;
+  font-size: 2.25rem;
+  color:rgba(230, 83, 60, 1);
+  font-weight: 700;
+}
+.nav-item{ 
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1rem;
+  font-weight: 500;
+  
+}
+
+/* button related style */
+.btn-join{
+  background-color: rgba(230, 83, 60, 1);
+  border-radius: 22px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 32px;
+  border: none;
+}
+
+#btn-download{
+  background-color : black;
+  border:2px solid white;
+  border-radius: 22px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 32px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.banner-btn{
+  position: absolute;
+  bottom: 60%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btn-number{
+  font-size: 2.26rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+/* banner related style */
+.banner-container{
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 260px;
+}
+.banner-title{
+  color: rgba(255, 255, 255, 1);
+  font-size: 5rem;
+font-style: italic;
+margin-bottom: 20px;
+}
+.banner-description{
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+/* habit related style */
+.habit-container{
+  width: 1044px;
+  margin: 0 auto;
+  justify-content: center;
+  
+}
+
+.habit-title{
+  margin-top: 100px;
+  color: white;
+}
+.habit-title h3{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.habit-images{
+  justify-content: space-between;
+  align-items: center;
+}
+.habit-description{
+  align-items: center;
+}
+
+.title{
+  color: white;
+  text-align: center;
+ 
+ 
+}
+
+.image-container{
+  border-radius: 50%;
+}
+.description{
+  color: white;
+  text-align: center;
+}
+.image-1{
+flex-direction: column;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  .nav-bar,
+  .nav-links,
+  .banner-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-btn{
+    display: none;
+  }
+}
